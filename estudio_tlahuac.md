@@ -1,3 +1,6 @@
+```
+mermaid
+
 graph TD
     %% Título Principal
     Inicio((Abordaje Sistémico:<br/>Cambio Climático en Tláhuac))
@@ -37,3 +40,5 @@ graph TD
     style P2 fill:#bbf,stroke:#333
     style P3 fill:#bbf,stroke:#333
     style Sistema fill:#dfd,stroke:#333,stroke-dasharray: 5 5
+
+``|
