@@ -1,5 +1,4 @@
-```
-mermaid
+```mermaid
 graph TD
     %% Título Principal
     Inicio((Abordaje Sistémico:<br/>Cambio Climático en Tláhuac))
