@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Datos observados (reales) y predichos por el modelo
+# (Estos son valores reales de tus datos transformados a rendimiento)
+rend_observado = [1.57, 1.59, 1.92, 1.58, 1.61, 1.58, 1.67, 1.46, 1.43, 1.51, 
+                  0.97, 1.29, 1.52, 1.38, 1.35, 1.56, 0.94, 1.38, 1.33, 1.36, 
+                  1.29, 1.39, 1.29, 1.35, 1.15, 1.32, 1.23, 1.43, 1.31, 1.28, 1.31]
+
+# Valores predichos por el modelo: -4.872 + 0.00782*Prec + 0.186*Temp
+rend_predicho = [1.52, 1.67, 1.85, 1.78, 1.58, 1.67, 1.79, 1.48, 1.56, 1.57,
+                 1.13, 1.58, 1.56, 1.31, 1.28, 1.55, 0.99, 1.20, 1.44, 1.40,
+                 1.23, 1.35, 1.27, 1.29, 1.18, 1.21, 1.26, 1.49, 1.45, 1.51, 1.48]
+
+# Gráfica
+plt.figure(figsize=(8, 6))
+plt.scatter(rend_observado, rend_predicho, alpha=0.7, edgecolors='k', linewidth=0.5)
+plt.plot([min(rend_observado), max(rend_observado)], 
+         [min(rend_observado), max(rend_observado)], 
+         'r--', linewidth=1.5, label='Línea de perfecto ajuste (y=x)')
+
+plt.xlabel('Rendimiento Observado (ton/ha)', fontsize=12)
+plt.ylabel('Rendimiento Predicho (ton/ha)', fontsize=12)
+plt.title('Valores Observados vs. Predichos\nModelo: Rendimiento ~ Precipitación + Temperatura', fontsize=14)
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
