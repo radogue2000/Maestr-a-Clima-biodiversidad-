@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ejes de recomendaciones técnico-operativas — Fase III</title>
+  <desc id="desc">Diagrama con cuatro ejes: Recorridos, Separación, Reúso y Depósitos.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 700 24px Arial, sans-serif; fill: #ffffff; }
+      .heading { font: 700 24px Arial, sans-serif; fill: #173042; }
+      .body { font: 20px Arial, sans-serif; fill: #173042; }
+      .connector { stroke: #58758A; stroke-width: 3; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#58758A"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#ffffff"/>
+
+  <rect x="300" y="45" width="1000" height="125" rx="18" fill="#123B5D" stroke="#123B5D" stroke-width="3"/>
+  <text x="800" y="97" text-anchor="middle" class="title">EJES DE RECOMENDACIONES</text>
+  <text x="800" y="137" text-anchor="middle" class="title">TÉCNICO-OPERATIVAS</text>
+  <text x="800" y="160" text-anchor="middle" class="subtitle">FASE III</text>
+
+  <path d="M800 170 V215 M800 215 H400 V250 M800 215 H1200 V250" class="connector"/>
+  <path d="M400 215 V650 M1200 215 V650" class="connector"/>
+  <path d="M400 650 H800 V685 M1200 650 H800" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="70" y="250" width="660" height="340" rx="18" fill="#EAF3F8" stroke="#3C88A8" stroke-width="3"/>
+  <text x="105" y="302" class="heading">1. Recorridos</text>
+  <text x="105" y="355" class="body">
+    <tspan x="105" dy="0">Reestructuración de rutas con algoritmos VRP</tspan>
+    <tspan x="105" dy="32">para reducir kilómetros recorridos y emisiones</tspan>
+    <tspan x="105" dy="32">asociadas al transporte.</tspan>
+  </text>
+
+  <rect x="870" y="250" width="660" height="340" rx="18" fill="#F3ECFA" stroke="#8C62A8" stroke-width="3"/>
+  <text x="905" y="302" class="heading">2. Separación</text>
+  <text x="905" y="355" class="body">
+    <tspan x="905" dy="0">Protocolos de separación en fuente (hogares</tspan>
+    <tspan x="905" dy="32">y comercios) apoyados en alertas e incentivos</tspan>
+    <tspan x="905" dy="32">vía App móvil.</tspan>
+  </text>
+
+  <rect x="70" y="685" width="660" height="250" rx="18" fill="#EDF6EF" stroke="#4D9A68" stroke-width="3"/>
+  <text x="105" y="737" class="heading">3. Reúso</text>
+  <text x="105" y="790" class="body">
+    <tspan x="105" dy="0">Rutas de canalización de FORSU hacia esquemas</tspan>
+    <tspan x="105" dy="32">de compostaje y biodigestión anaeróbica para</tspan>
+    <tspan x="105" dy="32">aprovechamiento energético.</tspan>
+  </text>
+
+  <rect x="870" y="685" width="660" height="250" rx="18" fill="#FFF5E7" stroke="#D18A36" stroke-width="3"/>
+  <text x="905" y="737" class="heading">4. Depósitos</text>
+  <text x="905" y="790" class="body">
+    <tspan x="905" dy="0">Estrategias para evitar el vertido de FORSU</tspan>
+    <tspan x="905" dy="32">en sitios a cielo abierto y reducir la generación</tspan>
+    <tspan x="905" dy="32">de lixiviados y metano.</tspan>
+  </text>
+</svg>
