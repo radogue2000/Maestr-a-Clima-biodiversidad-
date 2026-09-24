@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="900" viewBox="0 0 1700 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fases de la metodología</title>
+  <desc id="desc">Tabla de fases con denominación, recursos principales, método/técnicas y sistematización/software.</desc>
+
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #173042; }
+      .subtitle { font: 700 20px Arial, sans-serif; fill: #58758A; }
+      .header { font: 700 18px Arial, sans-serif; fill: #FFFFFF; }
+      .cell-title { font: 700 18px Arial, sans-serif; fill: #173042; }
+      .cell-text { font: 16px Arial, sans-serif; fill: #173042; }
+      .small-text { font: 14px Arial, sans-serif; fill: #173042; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="900" fill="#F8FAFC"/>
+
+  <rect x="70" y="40" width="1560" height="90" rx="16" fill="#EAF3F8" stroke="#B8D4E5" stroke-width="2"/>
+  <text x="850" y="83" text-anchor="middle" class="title">FASES DE LA METODOLOGÍA</text>
+  <text x="850" y="108" text-anchor="middle" class="subtitle">Diagnóstico, análisis y prospectiva para FORSU en Toluca</text>
+
+  <rect x="70" y="170" width="1560" height="680" rx="18" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="2"/>
+
+  <!-- Column widths -->
+  <!-- Fase: 160 | Denominación: 260 | Recursos: 300 | Método/Técnicas: 430 | Software: 330 -->
+  <rect x="70" y="170" width="160" height="80" fill="#123B5D"/>
+  <rect x="230" y="170" width="260" height="80" fill="#123B5D"/>
+  <rect x="490" y="170" width="300" height="80" fill="#123B5D"/>
+  <rect x="790" y="170" width="430" height="80" fill="#123B5D"/>
+  <rect x="1220" y="170" width="410" height="80" fill="#123B5D"/>
+
+  <text x="150" y="210" text-anchor="middle" class="header">Fase</text>
+  <text x="360" y="210" text-anchor="middle" class="header">Denominación</text>
+  <text x="640" y="210" text-anchor="middle" class="header">Recursos Principales</text>
+  <text x="1005" y="210" text-anchor="middle" class="header">Método / Técnicas</text>
+  <text x="1425" y="210" text-anchor="middle" class="header">Sistematización / Software</text>
+
+  <!-- Row 1 -->
+  <rect x="70" y="250" width="160" height="180" fill="#EAF3F8" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="230" y="250" width="260" height="180" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="490" y="250" width="300" height="180" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="790" y="250" width="430" height="180" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="1220" y="250" width="410" height="180" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+
+  <text x="150" y="325" text-anchor="middle" class="cell-title">Fase I</text>
+  <text x="360" y="305" text-anchor="middle" class="cell-title">
+    <tspan x="360" dy="0">Fundamentación</tspan>
+    <tspan x="360" dy="26">Teórica y Estado</tspan>
+    <tspan x="360" dy="26">del Arte</tspan>
+  </text>
+  <text x="640" y="300" text-anchor="middle" class="cell-text">
+    <tspan x="640" dy="0">Literatura especializada,</tspan>
+    <tspan x="640" dy="24">Google Scholar,</tspan>
+    <tspan x="640" dy="24">Normativa.</tspan>
+  </text>
+  <text x="1005" y="290" text-anchor="middle" class="cell-text">
+    <tspan x="1005" dy="0">Revisión Sistemática</tspan>
+    <tspan x="1005" dy="24">(PRISMA), Criterios de</tspan>
+    <tspan x="1005" dy="24">Inclusión/Exclusión,</tspan>
+    <tspan x="1005" dy="24">Cuadro Teórico (TGS,</tspan>
+    <tspan x="1005" dy="24">Caos, Complejidad).</tspan>
+  </text>
+  <text x="1425" y="300" text-anchor="middle" class="cell-text">
+    <tspan x="1425" dy="0">VOSviewer (Análisis</tspan>
+    <tspan x="1425" dy="24">bibliométrico y</tspan>
+    <tspan x="1425" dy="24">co-ocurrencia).</tspan>
+  </text>
+
+  <!-- Row 2 -->
+  <rect x="70" y="430" width="160" height="210" fill="#F3ECFA" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="230" y="430" width="260" height="210" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="490" y="430" width="300" height="210" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="790" y="430" width="430" height="210" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="1220" y="430" width="410" height="210" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+
+  <text x="150" y="515" text-anchor="middle" class="cell-title">Fase II</text>
+  <text x="360" y="490" text-anchor="middle" class="cell-title">
+    <tspan x="360" dy="0">Diagnóstico Local</tspan>
+    <tspan x="360" dy="26">FORSU Toluca</tspan>
+  </text>
+  <text x="640" y="488" text-anchor="middle" class="cell-text">
+    <tspan x="640" dy="0">INEGI, CONAPO,</tspan>
+    <tspan x="640" dy="24">SEMARNAT,</tspan>
+    <tspan x="640" dy="24">Imágenes Satelitales,</tspan>
+    <tspan x="640" dy="24">GPS, Encuestas.</tspan>
+  </text>
+  <text x="1005" y="485" text-anchor="middle" class="cell-text">
+    <tspan x="1005" dy="0">Enfoque Mixto,</tspan>
+    <tspan x="1005" dy="24">Muestreo por</tspan>
+    <tspan x="1005" dy="24">Conglomerados,</tspan>
+    <tspan x="1005" dy="24">Machine Learning</tspan>
+    <tspan x="1005" dy="24">(Random Forest y VRP).</tspan>
+  </text>
+  <text x="1425" y="490" text-anchor="middle" class="cell-text">
+    <tspan x="1425" dy="0">QGIS + Python</tspan>
+    <tspan x="1425" dy="24">(scikit-learn,</tspan>
+    <tspan x="1425" dy="24">geopandas).</tspan>
+  </text>
+
+  <!-- Row 3 -->
+  <rect x="70" y="640" width="160" height="210" fill="#EDF6EF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="230" y="640" width="260" height="210" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="490" y="640" width="300" height="210" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="790" y="640" width="430" height="210" fill="#FFFFFF" stroke="#D7E2EA" stroke-width="1"/>
+  <rect x="1220" y="640" width="410" height="210" fill="#F8FAFC" stroke="#D7E2EA" stroke-width="1"/>
+
+  <text x="150" y="725" text-anchor="middle" class="cell-title">Fase III</text>
+  <text x="360" y="705" text-anchor="middle" class="cell-title">
+    <tspan x="360" dy="0">Prospección y</tspan>
+    <tspan x="360" dy="26">Recomendaciones</tspan>
+  </text>
+  <text x="640" y="700" text-anchor="middle" class="cell-text">
+    <tspan x="640" dy="0">Series temporales,</tspan>
+    <tspan x="640" dy="24">Modelos IPCC,</tspan>
+    <tspan x="640" dy="24">Principios NAU y ODS.</tspan>
+  </text>
+  <text x="1005" y="695" text-anchor="middle" class="cell-text">
+    <tspan x="1005" dy="0">Regresión estadística,</tspan>
+    <tspan x="1005" dy="24">Proyección demográfica</tspan>
+    <tspan x="1005" dy="24">y de CH4,</tspan>
+    <tspan x="1005" dy="24">Análisis prospectivo.</tspan>
+  </text>
+  <text x="1425" y="700" text-anchor="middle" class="cell-text">
+    <tspan x="1425" dy="0">Matriz de</tspan>
+    <tspan x="1425" dy="24">recomendaciones</tspan>
+    <tspan x="1425" dy="24">(Recorridos,</tspan>
+    <tspan x="1425" dy="24">Separación, Reúso,</tspan>
+    <tspan x="1425" dy="24">Depósitos).</tspan>
+  </text>
+</svg>
