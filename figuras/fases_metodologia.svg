@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="700" viewBox="0 0 1700 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="980" viewBox="0 0 1700 980" role="img" aria-labelledby="title desc">
   <title id="title">Estructura metodológica general</title>
-  <desc id="desc">Diagrama en blanco y negro de las tres fases de la estructura metodológica general.</desc>
-
+  <desc id="desc">Matriz metodológica en blanco y negro con fases, denominación, recursos, métodos y software.</desc>
   <defs>
-    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L14,7 L0,14 z" fill="#111111"/>
-    </marker>
     <style>
-      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; }
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; }
-      .phase { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; fill: #111111; }
-      .detail { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #111111; }
+      .title{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:bold;letter-spacing:1px;fill:#000}
+      .subtitle{font-family:Arial,sans-serif;font-size:16px;fill:#000}
+      .head{font-family:Arial,sans-serif;font-size:17px;font-weight:bold;fill:#fff}
+      .phase{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:bold;fill:#000}
+      .body{font-family:Arial,sans-serif;font-size:16px;fill:#000}
+      .bodybold{font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#000}
+      .rule{stroke:#000;stroke-width:1.5}
+      .outer{fill:#fff;stroke:#000;stroke-width:2}
+      .headbox{fill:#000;stroke:#000;stroke-width:1.5}
+      .shade{fill:#f2f2f2;stroke:#000;stroke-width:1.2}
     </style>
   </defs>
+  <rect width="1700" height="980" fill="#fff"/>
+  <text x="850" y="52" text-anchor="middle" class="title">ESTRUCTURA METODOLÓGICA GENERAL</text>
+  <line x1="250" y1="70" x2="1450" y2="70" class="rule"/>
+  <text x="850" y="98" text-anchor="middle" class="subtitle">Protocolo de investigación: gestión de FORSU, inteligencia artificial y mitigación de CH₄ en Toluca</text>
 
-  <rect width="1700" height="700" fill="#ffffff"/>
+  <rect x="50" y="130" width="1600" height="72" class="headbox"/>
+  <line x1="210" y1="130" x2="210" y2="202" class="rule"/><line x1="510" y1="130" x2="510" y2="202" class="rule"/><line x1="810" y1="130" x2="810" y2="202" class="rule"/><line x1="1230" y1="130" x2="1230" y2="202" class="rule"/>
+  <text x="130" y="174" text-anchor="middle" class="head">FASE</text><text x="360" y="174" text-anchor="middle" class="head">DENOMINACIÓN</text><text x="660" y="174" text-anchor="middle" class="head">RECURSOS PRINCIPALES</text><text x="1020" y="174" text-anchor="middle" class="head">MÉTODOS / TÉCNICAS</text><text x="1440" y="174" text-anchor="middle" class="head">SISTEMATIZACIÓN / SOFTWARE</text>
 
-  <rect x="100" y="35" width="1500" height="82" class="box"/>
-  <text x="850" y="86" text-anchor="middle" class="title">ESTRUCTURA METODOLÓGICA GENERAL</text>
+  <rect x="50" y="202" width="1600" height="210" class="outer"/><line x1="210" y1="202" x2="210" y2="412" class="rule"/><line x1="510" y1="202" x2="510" y2="412" class="rule"/><line x1="810" y1="202" x2="810" y2="412" class="rule"/><line x1="1230" y1="202" x2="1230" y2="412" class="rule"/><rect x="51" y="203" width="158" height="208" class="shade"/>
+  <text x="130" y="295" text-anchor="middle" class="phase">FASE I</text>
+  <text x="360" y="260" text-anchor="middle" class="bodybold"><tspan x="360">Fundamentación teórica</tspan><tspan x="360" dy="25">y estado del arte</tspan><tspan x="360" dy="25">(análisis bibliométrico)</tspan></text>
+  <text x="660" y="258" text-anchor="middle" class="body"><tspan x="660">Literatura especializada</tspan><tspan x="660" dy="25">Google Scholar</tspan><tspan x="660" dy="25">Normativa y fuentes</tspan><tspan x="660" dy="25">académicas</tspan></text>
+  <text x="1020" y="248" text-anchor="middle" class="body"><tspan x="1020">Revisión sistemática de literatura</tspan><tspan x="1020" dy="25">Criterios de inclusión y exclusión</tspan><tspan x="1020" dy="25">Análisis bibliométrico</tspan><tspan x="1020" dy="25">Marcos epistemológicos: TGS, caos</tspan><tspan x="1020" dy="25">y complejidad</tspan></text>
+  <text x="1440" y="258" text-anchor="middle" class="body"><tspan x="1440">VOSviewer</tspan><tspan x="1440" dy="25">Zotero / Mendeley</tspan><tspan x="1440" dy="25">Hojas de cálculo</tspan></text>
 
-  <rect x="100" y="155" width="1500" height="110" class="box"/>
-  <text x="850" y="198" text-anchor="middle" class="phase">FASE I: Fundamentación Teórica, Estado del Arte y Análisis Bibliométrico</text>
-  <text x="850" y="232" text-anchor="middle" class="detail">(RSL + Google Scholar + VOSviewer + Marcos Epistemológicos)</text>
+  <rect x="50" y="412" width="1600" height="230" class="outer"/><line x1="210" y1="412" x2="210" y2="642" class="rule"/><line x1="510" y1="412" x2="510" y2="642" class="rule"/><line x1="810" y1="412" x2="810" y2="642" class="rule"/><line x1="1230" y1="412" x2="1230" y2="642" class="rule"/><rect x="51" y="413" width="158" height="228" class="shade"/>
+  <text x="130" y="515" text-anchor="middle" class="phase">FASE II</text>
+  <text x="360" y="472" text-anchor="middle" class="bodybold"><tspan x="360">Diagnóstico local de</tspan><tspan x="360" dy="25">FORSU en Toluca y</tspan><tspan x="360" dy="25">modelo conceptual GEOIA</tspan></text>
+  <text x="660" y="463" text-anchor="middle" class="body"><tspan x="660">INEGI, CONAPO y SEMARNAT</tspan><tspan x="660" dy="25">Cartografía e imágenes satelitales</tspan><tspan x="660" dy="25">GPS y encuestas</tspan><tspan x="660" dy="25">Datos geoespaciales</tspan></text>
+  <text x="1020" y="453" text-anchor="middle" class="body"><tspan x="1020">Enfoque mixto</tspan><tspan x="1020" dy="25">Muestreo por conglomerados</tspan><tspan x="1020" dy="25">Análisis espacial</tspan><tspan x="1020" dy="25">Algoritmos de aprendizaje automático</tspan><tspan x="1020" dy="25">(Random Forest y VRP)</tspan></text>
+  <text x="1440" y="475" text-anchor="middle" class="body"><tspan x="1440">QGIS</tspan><tspan x="1440" dy="25">Python: scikit-learn</tspan><tspan x="1440" dy="25">GeoPandas</tspan><tspan x="1440" dy="25">R</tspan></text>
 
-  <line x1="850" y1="265" x2="850" y2="315" stroke="#111111" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="50" y="642" width="1600" height="230" class="outer"/><line x1="210" y1="642" x2="210" y2="872" class="rule"/><line x1="510" y1="642" x2="510" y2="872" class="rule"/><line x1="810" y1="642" x2="810" y2="872" class="rule"/><line x1="1230" y1="642" x2="1230" y2="872" class="rule"/><rect x="51" y="643" width="158" height="228" class="shade"/>
+  <text x="130" y="745" text-anchor="middle" class="phase">FASE III</text>
+  <text x="360" y="702" text-anchor="middle" class="bodybold"><tspan x="360">Prospección futura,</tspan><tspan x="360" dy="25">arquitectura del modelo</tspan><tspan x="360" dy="25">y mitigación de CH₄</tspan></text>
+  <text x="660" y="695" text-anchor="middle" class="body"><tspan x="660">Series de tiempo</tspan><tspan x="660" dy="25">Inventarios y datos de emisiones</tspan><tspan x="660" dy="25">Factores de emisión IPCC</tspan><tspan x="660" dy="25">Escenarios de mitigación</tspan></text>
+  <text x="1020" y="685" text-anchor="middle" class="body"><tspan x="1020">Modelación y pronóstico de series</tspan><tspan x="1020" dy="25">Estimación de emisiones de CH₄</tspan><tspan x="1020" dy="25">Evaluación de escenarios</tspan><tspan x="1020" dy="25">Propuesta de arquitectura</tspan><tspan x="1020" dy="25">(269.56 a 215.65)</tspan></text>
+  <text x="1440" y="695" text-anchor="middle" class="body"><tspan x="1440">R / RStudio</tspan><tspan x="1440" dy="25">Python</tspan><tspan x="1440" dy="25">Excel</tspan><tspan x="1440" dy="25">Matriz de recomendaciones</tspan></text>
 
-  <rect x="100" y="325" width="1500" height="110" class="box"/>
-  <text x="850" y="368" text-anchor="middle" class="phase">FASE II: Diagnóstico Local de FORSU en Toluca y Modelo Conceptual GEOIA</text>
-  <text x="850" y="402" text-anchor="middle" class="detail">(Análisis Espacial en QGIS + Estimación con Algoritmos IA + Fuentes Oficiales)</text>
-
-  <line x1="850" y1="435" x2="850" y2="485" stroke="#111111" stroke-width="3" marker-end="url(#arrow)"/>
-
-  <rect x="100" y="495" width="1500" height="125" class="box"/>
-  <text x="850" y="538" text-anchor="middle" class="phase">FASE III: Prospección Futura, Modelo de Arquitectura y Mitigación de CH₄</text>
-  <text x="850" y="574" text-anchor="middle" class="detail">(Modelación de Series de Tiempo + Estimación de Emisiones IPCC: 269.56 a 215.65)</text>
+  <line x1="50" y1="910" x2="1650" y2="910" class="rule"/>
+  <text x="850" y="940" text-anchor="middle" class="subtitle">Nota: FORSU = fracción orgánica de los residuos sólidos urbanos; CH₄ = metano; RSL = revisión sistemática de literatura.</text>
 </svg>
