@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Desglose de referencias de encuadre teórico</title>
+  <desc id="desc">Tabla con 279 referencias integradas en cuatro ejes teóricos: teoría general de sistemas, teoría del caos, sistemas complejos y saberes ambientales.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#123B5D"/><stop offset="1" stop-color="#1B5E76"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#183B56" flood-opacity=".16"/></filter>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif;fill:#173042}.title{font-size:38px;font-weight:700;letter-spacing:1px}.subtitle{font-size:23px;fill:#DDEAF1}.head{font-size:25px;font-weight:700;fill:#fff}.axis{font-size:25px;font-weight:700}.query{font-size:23px}.ref{font-size:24px;font-weight:700}.note{font-size:20px;fill:#526B79}.foot{font-size:19px;fill:#617582}
+    </style>
+  </defs>
+  <rect width="1800" height="1120" fill="#fff"/>
+  <rect x="70" y="55" width="1660" height="150" rx="22" fill="url(#header)" filter="url(#shadow)"/>
+  <text x="900" y="120" text-anchor="middle" class="sans title" fill="#fff">DESGLOSE DE REFERENCIAS DE ENCUADRE TEÓRICO</text>
+  <text x="900" y="170" text-anchor="middle" class="sans subtitle">279 referencias integradas · Gestión de residuos orgánicos</text>
+
+  <rect x="70" y="245" width="1660" height="720" rx="16" fill="#fff" stroke="#58758A" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="70" y="245" width="1660" height="82" rx="16" fill="#2E6680"/>
+  <rect x="70" y="303" width="1660" height="24" fill="#2E6680"/>
+  <line x1="510" y1="245" x2="510" y2="965" stroke="#58758A" stroke-width="3"/>
+  <line x1="1330" y1="245" x2="1330" y2="965" stroke="#58758A" stroke-width="3"/>
+  <text x="290" y="297" text-anchor="middle" class="sans head">Eje conceptual</text>
+  <text x="920" y="297" text-anchor="middle" class="sans head">Cadena de búsqueda</text>
+  <text x="1530" y="297" text-anchor="middle" class="sans head">Referencias integradas</text>
+
+  <rect x="70" y="327" width="1660" height="159" fill="#EAF3F8"/>
+  <rect x="70" y="486" width="1660" height="159" fill="#F3ECFA"/>
+  <rect x="70" y="645" width="1660" height="159" fill="#EDF6EF"/>
+  <rect x="70" y="804" width="1660" height="161" fill="#FFF5E7"/>
+  <line x1="70" y1="486" x2="1730" y2="486" stroke="#58758A" stroke-width="2"/>
+  <line x1="70" y1="645" x2="1730" y2="645" stroke="#58758A" stroke-width="2"/>
+  <line x1="70" y1="804" x2="1730" y2="804" stroke="#58758A" stroke-width="2"/>
+
+  <text x="105" y="383" class="sans axis">Teoría General de</text><text x="105" y="418" class="sans axis">Sistemas (TGS)</text>
+  <text x="545" y="382" class="sans query">("general systems theory" OR "TSG")</text><text x="545" y="420" class="sans query">AND ("organic waste")</text>
+  <text x="1530" y="400" text-anchor="middle" class="sans ref">53 obras</text>
+
+  <text x="105" y="542" class="sans axis">Teoría del Caos</text>
+  <text x="545" y="541" class="sans query">("chaos theory" OR "TC")</text><text x="545" y="579" class="sans query">AND ("organic waste")</text>
+  <text x="1530" y="559" text-anchor="middle" class="sans ref">56 obras</text>
+
+  <text x="105" y="701" class="sans axis">Sistemas Complejos</text>
+  <text x="545" y="700" class="sans query">("complex system")</text><text x="545" y="738" class="sans query">AND ("organic waste")</text>
+  <text x="1530" y="718" text-anchor="middle" class="sans ref">123 obras</text><text x="1530" y="755" text-anchor="middle" class="sans note">incluye 3 en español</text>
+
+  <text x="105" y="860" class="sans axis">Saberes</text><text x="105" y="895" class="sans axis">Ambientales</text>
+  <text x="545" y="859" class="sans query">("environmental knowledge")</text><text x="545" y="897" class="sans query">AND ("organic waste")</text>
+  <text x="1530" y="877" text-anchor="middle" class="sans ref">47 obras</text><text x="1530" y="914" text-anchor="middle" class="sans note">incluye 13 en español</text>
+
+  <rect x="70" y="1000" width="1660" height="62" rx="12" fill="#E7EEF2"/>
+  <text x="900" y="1040" text-anchor="middle" class="sans foot">Figura. Desglose de referencias utilizadas en el encuadre teórico · Elaboración propia</text>
+</svg>
