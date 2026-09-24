@@ -1,72 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900" role="img" aria-labelledby="title desc">
-  <title id="title">Ejes de recomendaciones técnico-operativas de la Fase III</title>
-  <desc id="desc">Tabla académica formal en blanco y negro que presenta cuatro ejes de recomendaciones técnico-operativas y su alcance operativo conceptual.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Metodología y fases de la investigación</title>
+  <desc id="desc">Tabla académica formal en blanco y negro esquematizando las fases de la metodología, recursos principales, técnicas empleadas y outputs de la tesis.</desc>
   <defs>
     <style>
-      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; font-weight: bold; letter-spacing: 0.7px; fill: #000; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #000; }
-      .head { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: bold; fill: #fff; }
-      .axis { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: bold; fill: #000; }
-      .body { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #000; }
-      .note { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: italic; fill: #000; }
-      .rule { stroke: #000; stroke-width: 1.5; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 34px; font-weight: 700; fill: #000; letter-spacing: 0.5px; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; fill: #fff; }
+      .cell { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #000; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size: 23px; font-weight: 700; fill: #000; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: italic; fill: #000; }
+      .rule { stroke: #000; stroke-width: 2; }
       .outer { fill: #fff; stroke: #000; stroke-width: 2.5; }
-      .headbox { fill: #000; stroke: #000; stroke-width: 1.5; }
-      .shade { fill: #f4f4f4; }
+      .header { fill: #000; stroke: #000; stroke-width: 2; }
+      .shade { fill: #f2f2f2; }
     </style>
   </defs>
 
-  <rect width="1800" height="900" fill="#fff"/>
+  <rect width="1800" height="1100" fill="#ffffff"/>
+  <text x="900" y="70" text-anchor="middle" class="title">FASES DE LA METODOLOGÍA DE INVESTIGACIÓN</text>
+  <line x1="270" y1="90" x2="1530" y2="90" class="rule"/>
 
-  <text x="900" y="58" text-anchor="middle" class="title">EJES DE RECOMENDACIONES TÉCNICO-OPERATIVAS (FASE III)</text>
-  <line x1="260" y1="80" x2="1540" y2="80" class="rule"/>
-  <text x="900" y="112" text-anchor="middle" class="subtitle">Síntesis del alcance operativo conceptual de las recomendaciones</text>
+  <rect x="80" y="120" width="1640" height="90" class="header"/>
+  <rect x="80" y="210" width="1640" height="260" class="outer"/>
+  <rect x="80" y="470" width="1640" height="260" class="outer"/>
+  <rect x="80" y="730" width="1640" height="260" class="outer"/>
 
-  <rect x="70" y="150" width="1660" height="78" class="headbox"/>
-  <line x1="430" y1="150" x2="430" y2="228" class="rule"/>
-  <text x="250" y="198" text-anchor="middle" class="head">EJE</text>
-  <text x="1080" y="198" text-anchor="middle" class="head">ALCANCE OPERATIVO CONCEPTUAL</text>
+  <line x1="500" y1="120" x2="500" y2="990" class="rule"/>
+  <line x1="1060" y1="120" x2="1060" y2="990" class="rule"/>
+  <line x1="1460" y1="120" x2="1460" y2="990" class="rule"/>
+  <line x1="80" y1="210" x2="1720" y2="210" class="rule"/>
+  <line x1="80" y1="470" x2="1720" y2="470" class="rule"/>
+  <line x1="80" y1="730" x2="1720" y2="730" class="rule"/>
 
-  <rect x="70" y="228" width="1660" height="560" class="outer"/>
-  <rect x="71" y="229" width="358" height="558" class="shade"/>
-  <line x1="430" y1="228" x2="430" y2="788" class="rule"/>
-  <line x1="70" y1="368" x2="1730" y2="368" class="rule"/>
-  <line x1="70" y1="508" x2="1730" y2="508" class="rule"/>
-  <line x1="70" y1="648" x2="1730" y2="648" class="rule"/>
+  <text x="290" y="175" text-anchor="middle" class="head">Denominación</text>
+  <text x="780" y="175" text-anchor="middle" class="head">Recursos Principales</text>
+  <text x="1260" y="175" text-anchor="middle" class="head">Método / Técnicas</text>
+  <text x="1590" y="175" text-anchor="middle" class="head">Sistematización / Output de la Tesis</text>
 
-  <text x="250" y="310" text-anchor="middle" class="axis">
-    <tspan x="250">1. Recorridos</tspan>
-  </text>
-  <text x="470" y="286" class="body">
-    <tspan x="470">Reestructuración teórica de rutas con algoritmos VRP para</tspan>
-    <tspan x="470" dy="34">minimizar kilómetros recorridos y emisiones asociadas.</tspan>
-  </text>
+  <rect x="80" y="210" width="420" height="260" class="shade"/>
+  <rect x="500" y="210" width="560" height="260" class="shade"/>
+  <rect x="1060" y="210" width="400" height="260" class="shade"/>
+  <rect x="1460" y="210" width="260" height="260" class="shade"/>
+  <text x="290" y="255" text-anchor="middle" class="label"><tspan x="290">Fundamentación</tspan><tspan x="290" dy="30">Teórica y Estado</tspan><tspan x="290" dy="30">del Arte</tspan></text>
+  <text x="780" y="255" text-anchor="middle" class="cell"><tspan x="780">Literatura especializada,</tspan><tspan x="780" dy="28">Google Scholar,</tspan><tspan x="780" dy="28">Normativa.</tspan></text>
+  <text x="1260" y="255" text-anchor="middle" class="cell"><tspan x="1260">Revisión Sistemática</tspan><tspan x="1260" dy="28">(PRISMA), criterios de</tspan><tspan x="1260" dy="28">inclusión/exclusión,</tspan><tspan x="1260" dy="28">cuadro teórico (TGS,</tspan><tspan x="1260" dy="28">Caos, Complejidad).</tspan></text>
+  <text x="1590" y="255" text-anchor="middle" class="cell"><tspan x="1590">VOSviewer</tspan><tspan x="1590" dy="28">(análisis bibliométrico</tspan><tspan x="1590" dy="28">y co-ocurrencia).</tspan></text>
 
-  <text x="250" y="450" text-anchor="middle" class="axis">
-    <tspan x="250">2. Separación</tspan>
-  </text>
-  <text x="470" y="406" class="body">
-    <tspan x="470">Protocolos conceptuales de separación en fuente (hogares y</tspan>
-    <tspan x="470" dy="34">comercios) vinculados a esquemas de incentivos y alertas.</tspan>
-  </text>
+  <rect x="80" y="470" width="420" height="260"/>
+  <rect x="500" y="470" width="560" height="260"/>
+  <rect x="1060" y="470" width="400" height="260"/>
+  <rect x="1460" y="470" width="260" height="260"/>
+  <text x="290" y="515" text-anchor="middle" class="label"><tspan x="290">Diagnóstico Local</tspan><tspan x="290" dy="30">y Modelo Conceptual</tspan><tspan x="290" dy="30">GEOIA</tspan></text>
+  <text x="780" y="515" text-anchor="middle" class="cell"><tspan x="780">INEGI, IGECEM,</tspan><tspan x="780" dy="28">SEMARNAT, imágenes</tspan><tspan x="780" dy="28">satelitales, cartografía.</tspan></text>
+  <text x="1260" y="515" text-anchor="middle" class="cell"><tspan x="1260">Enfoque mixto,</tspan><tspan x="1260" dy="28">diagnóstico secundario,</tspan><tspan x="1260" dy="28">fundamentación de</tspan><tspan x="1260" dy="28">Machine Learning</tspan><tspan x="1260" dy="28">(Random Forest y VRP).</tspan></text>
+  <text x="1590" y="515" text-anchor="middle" class="cell"><tspan x="1590">QGIS + marco</tspan><tspan x="1590" dy="28">conceptual de</tspan><tspan x="1590" dy="28">integración de</tspan><tspan x="1590" dy="28">datos espaciales.</tspan></text>
 
-  <text x="250" y="590" text-anchor="middle" class="axis">
-    <tspan x="250">3. Reúso</tspan>
-  </text>
-  <text x="470" y="546" class="body">
-    <tspan x="470">Esquemas de canalización de FORSU hacia compostaje y</tspan>
-    <tspan x="470" dy="34">biodigestión anaeróbica para aprovechamiento energético.</tspan>
-  </text>
+  <rect x="80" y="730" width="420" height="260" class="shade"/>
+  <rect x="500" y="730" width="560" height="260" class="shade"/>
+  <rect x="1060" y="730" width="400" height="260" class="shade"/>
+  <rect x="1460" y="730" width="260" height="260" class="shade"/>
+  <text x="290" y="775" text-anchor="middle" class="label"><tspan x="290">Prospección y</tspan><tspan x="290" dy="30">Modelo de</tspan><tspan x="290" dy="30">Arquitectura</tspan><tspan x="290" dy="30">TLAZOL</tspan></text>
+  <text x="780" y="775" text-anchor="middle" class="cell"><tspan x="780">Series temporales,</tspan><tspan x="780" dy="28">modelos IPCC,</tspan><tspan x="780" dy="28">principios NAU y ODS.</tspan></text>
+  <text x="1260" y="775" text-anchor="middle" class="cell"><tspan x="1260">Regresión estadística,</tspan><tspan x="1260" dy="28">proyección demográfica</tspan><tspan x="1260" dy="28">y de CH4 (mitigación del</tspan><tspan x="1260" dy="28">20%: 269.56 a 215.65</tspan><tspan x="1260" dy="28">Gg CO2e).</tspan></text>
+  <text x="1590" y="775" text-anchor="middle" class="cell"><tspan x="1590">Modelo de arquitectura</tspan><tspan x="1590" dy="28">conceptual TLAZOL</tspan><tspan x="1590" dy="28">y matriz de</tspan><tspan x="1590" dy="28">recomendaciones</tspan><tspan x="1590" dy="28">(Recorridos,</tspan><tspan x="1590" dy="28">Separación, Reúso,</tspan><tspan x="1590" dy="28">Depósitos).</tspan></text>
 
-  <text x="250" y="730" text-anchor="middle" class="axis">
-    <tspan x="250">4. Depósitos</tspan>
-  </text>
-  <text x="470" y="686" class="body">
-    <tspan x="470">Directrices para evitar el vertido de FORSU en sitios a cielo</tspan>
-    <tspan x="470" dy="34">abierto, reduciendo lixiviados y la generación de metano.</tspan>
-  </text>
-
-  <line x1="70" y1="825" x2="1730" y2="825" class="rule"/>
-  <text x="70" y="858" class="note">Nota: FORSU = fracción orgánica de los residuos sólidos urbanos; VRP = problema de ruteo de vehículos.</text>
+  <line x1="80" y1="1015" x2="1720" y2="1015" class="rule"/>
+  <text x="90" y="1050" class="note">Fuente: elaboración propia, basada en la estructura metodológica de la tesis.</text>
 </svg>
