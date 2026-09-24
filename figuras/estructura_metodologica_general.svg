@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200" role="img" aria-labelledby="title desc">
+  <title id="title">Estructura metodológica general</title>
+  <desc id="desc">Diagrama de flujo académico de tres fases para el diagnóstico y mitigación de emisiones de metano derivadas de FORSU en Toluca.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#123B5D"/><stop offset="1" stop-color="#1B5E76"/></linearGradient>
+    <linearGradient id="phase1" x1="0" x2="1"><stop offset="0" stop-color="#EAF3F8"/><stop offset="1" stop-color="#F7FBFC"/></linearGradient>
+    <linearGradient id="phase2" x1="0" x2="1"><stop offset="0" stop-color="#EDF6EF"/><stop offset="1" stop-color="#F9FCF9"/></linearGradient>
+    <linearGradient id="phase3" x1="0" x2="1"><stop offset="0" stop-color="#FFF5E7"/><stop offset="1" stop-color="#FFFBF5"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#183B56" flood-opacity=".16"/></filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#58758A"/></marker>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif;fill:#173042}.title{font-size:48px;font-weight:700;letter-spacing:1px}.subtitle{font-size:24px;fill:#DDEAF1}.phase{font-size:27px;font-weight:700}.heading{font-size:31px;font-weight:700}.body{font-size:24px}.small{font-size:21px;fill:#496171}.label{font-size:22px;font-weight:700;letter-spacing:1px}.footer{font-size:20px;fill:#617582}
+    </style>
+  </defs>
+  <rect width="1600" height="2200" fill="#FFFFFF"/>
+  <rect x="80" y="70" width="1440" height="235" rx="24" fill="url(#header)" filter="url(#shadow)"/>
+  <text x="800" y="150" text-anchor="middle" class="sans title" fill="#FFFFFF">ESTRUCTURA METODOLÓGICA GENERAL</text>
+  <text x="800" y="205" text-anchor="middle" class="sans subtitle">Gestión de FORSU y mitigación de emisiones de CH₄ en Toluca</text>
+  <text x="800" y="258" text-anchor="middle" class="sans small" fill="#C8DCE6">Investigación aplicada con enfoque sistémico, espacial y predictivo</text>
+
+  <line x1="800" y1="305" x2="800" y2="350" stroke="#58758A" stroke-width="6" marker-end="url(#arrow)"/>
+  <rect x="110" y="365" width="1380" height="445" rx="24" fill="url(#phase1)" stroke="#3C88A8" stroke-width="4" filter="url(#shadow)"/>
+  <rect x="110" y="365" width="1380" height="76" rx="24" fill="#3C88A8"/>
+  <rect x="110" y="417" width="1380" height="24" fill="#3C88A8"/>
+  <circle cx="171" cy="403" r="30" fill="#FFFFFF" opacity=".95"/><text x="171" y="413" text-anchor="middle" class="sans phase" fill="#3C88A8">I</text>
+  <text x="225" y="414" class="sans phase" fill="#FFFFFF">FUNDAMENTACIÓN TEÓRICA Y ESTADO DEL ARTE</text>
+  <text x="170" y="498" class="sans heading">Revisión sistemática y análisis bibliométrico</text>
+  <text x="170" y="550" class="sans body">• Revisión Sistemática de la Literatura (RSL)</text>
+  <text x="170" y="594" class="sans body">• Búsqueda y selección de evidencia en Google Scholar</text>
+  <text x="170" y="638" class="sans body">• Análisis de redes y tendencias mediante VOSviewer</text>
+  <text x="170" y="682" class="sans body">• Construcción de marcos teóricos, conceptuales y epistemológicos</text>
+  <rect x="170" y="721" width="1240" height="57" rx="12" fill="#D8EBF2"/><text x="800" y="758" text-anchor="middle" class="sans label" fill="#235A72">PRODUCTO: BASE TEÓRICA Y MODELO CONCEPTUAL DE LA INVESTIGACIÓN</text>
+
+  <line x1="800" y1="810" x2="800" y2="855" stroke="#58758A" stroke-width="6" marker-end="url(#arrow)"/>
+  <rect x="110" y="870" width="1380" height="560" rx="24" fill="url(#phase2)" stroke="#4D9A68" stroke-width="4" filter="url(#shadow)"/>
+  <rect x="110" y="870" width="1380" height="76" rx="24" fill="#4D9A68"/><rect x="110" y="922" width="1380" height="24" fill="#4D9A68"/>
+  <circle cx="171" cy="908" r="30" fill="#FFFFFF" opacity=".95"/><text x="171" y="918" text-anchor="middle" class="sans phase" fill="#4D9A68">II</text>
+  <text x="225" y="919" class="sans phase" fill="#FFFFFF">DIAGNÓSTICO LOCAL DE FORSU EN TOLUCA</text>
+  <text x="170" y="1006" class="sans heading">Análisis territorial, estadístico e infraestructural</text>
+  <text x="170" y="1058" class="sans body">• Integración, depuración y validación de fuentes oficiales</text>
+  <text x="170" y="1102" class="sans body">• Análisis espacial y representación cartográfica con QGIS</text>
+  <text x="170" y="1146" class="sans body">• Clasificación y predicción mediante inteligencia artificial</text>
+  <text x="205" y="1184" class="sans small">Random Forest</text>
+  <text x="170" y="1230" class="sans body">• Optimización de recorridos mediante el Problema de Ruteo de Vehículos</text>
+  <text x="205" y="1268" class="sans small">Vehicle Routing Problem (VRP)</text>
+  <text x="170" y="1316" class="sans body">• Evaluación de infraestructura, cobertura y operación del servicio</text>
+  <rect x="170" y="1350" width="1240" height="57" rx="12" fill="#DCEFE1"/><text x="800" y="1387" text-anchor="middle" class="sans label" fill="#28603C">PRODUCTO: DIAGNÓSTICO ESPACIAL Y OPERATIVO DEL SISTEMA</text>
+
+  <line x1="800" y1="1430" x2="800" y2="1475" stroke="#58758A" stroke-width="6" marker-end="url(#arrow)"/>
+  <rect x="110" y="1490" width="1380" height="560" rx="24" fill="url(#phase3)" stroke="#D18A36" stroke-width="4" filter="url(#shadow)"/>
+  <rect x="110" y="1490" width="1380" height="76" rx="24" fill="#D18A36"/><rect x="110" y="1542" width="1380" height="24" fill="#D18A36"/>
+  <circle cx="171" cy="1528" r="30" fill="#FFFFFF" opacity=".95"/><text x="171" y="1538" text-anchor="middle" class="sans phase" fill="#D18A36">III</text>
+  <text x="225" y="1539" class="sans phase" fill="#FFFFFF">PROSPECCIÓN Y MITIGACIÓN DE EMISIONES DE CH₄</text>
+  <text x="170" y="1626" class="sans heading">Modelación futura y formulación de recomendaciones</text>
+  <text x="170" y="1678" class="sans body">• Modelación de series de tiempo y análisis de tendencias</text>
+  <text x="170" y="1722" class="sans body">• Construcción de escenarios prospectivos para la gestión de FORSU</text>
+  <text x="170" y="1766" class="sans body">• Estimación y reducción potencial de emisiones de metano (CH₄)</text>
+  <text x="170" y="1810" class="sans body">• Propuestas para optimizar recorridos y mejorar la separación</text>
+  <text x="170" y="1854" class="sans body">• Recomendaciones para la selección y operación del sitio de disposición</text>
+  <text x="170" y="1898" class="sans body">• Lineamientos técnicos, ambientales y estratégicos de intervención</text>
+  <rect x="170" y="1940" width="1240" height="57" rx="12" fill="#F8E7CB"/><text x="800" y="1977" text-anchor="middle" class="sans label" fill="#85551F">PRODUCTO: ESCENARIOS Y RECOMENDACIONES DE MITIGACIÓN</text>
+
+  <line x1="800" y1="2050" x2="800" y2="2090" stroke="#58758A" stroke-width="6" marker-end="url(#arrow)"/>
+  <rect x="310" y="2100" width="980" height="62" rx="31" fill="#173042"/><text x="800" y="2141" text-anchor="middle" class="sans label" fill="#FFFFFF">RESULTADOS INTEGRADOS PARA LA TOMA DE DECISIONES</text>
+  <text x="800" y="2187" text-anchor="middle" class="sans footer">Figura. Propuesta de estructura metodológica general · Elaboración propia</text>
+</svg>
