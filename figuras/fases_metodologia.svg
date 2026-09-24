@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
-  <title id="title">Metodología y fases de la investigación</title>
-  <desc id="desc">Tabla académica formal en blanco y negro esquematizando las fases de la metodología, recursos principales, técnicas empleadas y outputs de la tesis.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1350" viewBox="0 0 2200 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Fases de la metodología de investigación</title>
+  <desc id="desc">Tabla académica con las fases de la investigación, su denominación, recursos principales, métodos y técnicas, y la sistematización o producto de la tesis.</desc>
   <defs>
     <style>
-      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 34px; font-weight: 700; fill: #000; letter-spacing: 0.5px; }
-      .head { font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; fill: #fff; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 36px; font-weight: 700; fill: #000; letter-spacing: 0.5px; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #fff; }
       .cell { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #000; }
-      .label { font-family: Georgia, 'Times New Roman', serif; font-size: 23px; font-weight: 700; fill: #000; }
+      .phase { font-family: Georgia, 'Times New Roman', serif; font-size: 23px; font-weight: 700; fill: #000; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size: 21px; font-weight: 700; fill: #000; }
       .note { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: italic; fill: #000; }
       .rule { stroke: #000; stroke-width: 2; }
       .outer { fill: #fff; stroke: #000; stroke-width: 2.5; }
@@ -16,54 +17,66 @@
     </style>
   </defs>
 
-  <rect width="1800" height="1100" fill="#ffffff"/>
-  <text x="900" y="70" text-anchor="middle" class="title">FASES DE LA METODOLOGÍA DE INVESTIGACIÓN</text>
-  <line x1="270" y1="90" x2="1530" y2="90" class="rule"/>
+  <rect width="2200" height="1350" fill="#ffffff"/>
+  <text x="1100" y="65" text-anchor="middle" class="title">FASES DE LA METODOLOGÍA DE INVESTIGACIÓN</text>
+  <line x1="300" y1="88" x2="1900" y2="88" class="rule"/>
 
-  <rect x="80" y="120" width="1640" height="90" class="header"/>
-  <rect x="80" y="210" width="1640" height="260" class="outer"/>
-  <rect x="80" y="470" width="1640" height="260" class="outer"/>
-  <rect x="80" y="730" width="1640" height="260" class="outer"/>
+  <!-- Estructura de la tabla: Fase | Denominación | Recursos | Método/Técnicas | Output -->
+  <rect x="60" y="115" width="2080" height="105" class="header"/>
+  <rect x="60" y="220" width="2080" height="320" class="outer"/>
+  <rect x="60" y="540" width="2080" height="320" class="outer"/>
+  <rect x="60" y="860" width="2080" height="320" class="outer"/>
 
-  <line x1="500" y1="120" x2="500" y2="990" class="rule"/>
-  <line x1="1060" y1="120" x2="1060" y2="990" class="rule"/>
-  <line x1="1460" y1="120" x2="1460" y2="990" class="rule"/>
-  <line x1="80" y1="210" x2="1720" y2="210" class="rule"/>
-  <line x1="80" y1="470" x2="1720" y2="470" class="rule"/>
-  <line x1="80" y1="730" x2="1720" y2="730" class="rule"/>
+  <line x1="210" y1="115" x2="210" y2="1180" class="rule"/>
+  <line x1="570" y1="115" x2="570" y2="1180" class="rule"/>
+  <line x1="1030" y1="115" x2="1030" y2="1180" class="rule"/>
+  <line x1="1600" y1="115" x2="1600" y2="1180" class="rule"/>
+  <line x1="60" y1="220" x2="2140" y2="220" class="rule"/>
+  <line x1="60" y1="540" x2="2140" y2="540" class="rule"/>
+  <line x1="60" y1="860" x2="2140" y2="860" class="rule"/>
 
-  <text x="290" y="175" text-anchor="middle" class="head">Denominación</text>
-  <text x="780" y="175" text-anchor="middle" class="head">Recursos Principales</text>
-  <text x="1260" y="175" text-anchor="middle" class="head">Método / Técnicas</text>
-  <text x="1590" y="175" text-anchor="middle" class="head">Sistematización / Output de la Tesis</text>
+  <text x="135" y="178" text-anchor="middle" class="head">Fase</text>
+  <text x="390" y="178" text-anchor="middle" class="head">Denominación</text>
+  <text x="800" y="178" text-anchor="middle" class="head">Recursos Principales</text>
+  <text x="1315" y="165" text-anchor="middle" class="head"><tspan x="1315">Método /</tspan><tspan x="1315" dy="27">Técnicas</tspan></text>
+  <text x="1870" y="165" text-anchor="middle" class="head"><tspan x="1870">Sistematización /</tspan><tspan x="1870" dy="27">Output de la Tesis</tspan></text>
 
-  <rect x="80" y="210" width="420" height="260" class="shade"/>
-  <rect x="500" y="210" width="560" height="260" class="shade"/>
-  <rect x="1060" y="210" width="400" height="260" class="shade"/>
-  <rect x="1460" y="210" width="260" height="260" class="shade"/>
-  <text x="290" y="255" text-anchor="middle" class="label"><tspan x="290">Fundamentación</tspan><tspan x="290" dy="30">Teórica y Estado</tspan><tspan x="290" dy="30">del Arte</tspan></text>
-  <text x="780" y="255" text-anchor="middle" class="cell"><tspan x="780">Literatura especializada,</tspan><tspan x="780" dy="28">Google Scholar,</tspan><tspan x="780" dy="28">Normativa.</tspan></text>
-  <text x="1260" y="255" text-anchor="middle" class="cell"><tspan x="1260">Revisión Sistemática</tspan><tspan x="1260" dy="28">(PRISMA), criterios de</tspan><tspan x="1260" dy="28">inclusión/exclusión,</tspan><tspan x="1260" dy="28">cuadro teórico (TGS,</tspan><tspan x="1260" dy="28">Caos, Complejidad).</tspan></text>
-  <text x="1590" y="255" text-anchor="middle" class="cell"><tspan x="1590">VOSviewer</tspan><tspan x="1590" dy="28">(análisis bibliométrico</tspan><tspan x="1590" dy="28">y co-ocurrencia).</tspan></text>
+  <rect x="60" y="220" width="150" height="320" class="shade"/>
+  <rect x="210" y="220" width="360" height="320" class="shade"/>
+  <rect x="570" y="220" width="460" height="320" class="shade"/>
+  <rect x="1030" y="220" width="570" height="320" class="shade"/>
+  <rect x="1600" y="220" width="540" height="320" class="shade"/>
 
-  <rect x="80" y="470" width="420" height="260"/>
-  <rect x="500" y="470" width="560" height="260"/>
-  <rect x="1060" y="470" width="400" height="260"/>
-  <rect x="1460" y="470" width="260" height="260"/>
-  <text x="290" y="515" text-anchor="middle" class="label"><tspan x="290">Diagnóstico Local</tspan><tspan x="290" dy="30">y Modelo Conceptual</tspan><tspan x="290" dy="30">GEOIA</tspan></text>
-  <text x="780" y="515" text-anchor="middle" class="cell"><tspan x="780">INEGI, IGECEM,</tspan><tspan x="780" dy="28">SEMARNAT, imágenes</tspan><tspan x="780" dy="28">satelitales, cartografía.</tspan></text>
-  <text x="1260" y="515" text-anchor="middle" class="cell"><tspan x="1260">Enfoque mixto,</tspan><tspan x="1260" dy="28">diagnóstico secundario,</tspan><tspan x="1260" dy="28">fundamentación de</tspan><tspan x="1260" dy="28">Machine Learning</tspan><tspan x="1260" dy="28">(Random Forest y VRP).</tspan></text>
-  <text x="1590" y="515" text-anchor="middle" class="cell"><tspan x="1590">QGIS + marco</tspan><tspan x="1590" dy="28">conceptual de</tspan><tspan x="1590" dy="28">integración de</tspan><tspan x="1590" dy="28">datos espaciales.</tspan></text>
+  <text x="135" y="380" text-anchor="middle" class="phase"><tspan x="135">Fase</tspan><tspan x="135" dy="32">I</tspan></text>
+  <text x="390" y="300" text-anchor="middle" class="label"><tspan x="390">Fundamentación</tspan><tspan x="390" dy="29">Teórica y Estado</tspan><tspan x="390" dy="29">del Arte</tspan></text>
+  <text x="800" y="300" text-anchor="middle" class="cell"><tspan x="800">Literatura especializada,</tspan><tspan x="800" dy="29">Google Scholar,</tspan><tspan x="800" dy="29">Normativa.</tspan></text>
+  <text x="1315" y="285" text-anchor="middle" class="cell"><tspan x="1315">Revisión Sistemática</tspan><tspan x="1315" dy="28">(PRISMA), criterios de</tspan><tspan x="1315" dy="28">inclusión/exclusión, cuadro</tspan><tspan x="1315" dy="28">teórico (TGS, Caos,</tspan><tspan x="1315" dy="28">Complejidad).</tspan></text>
+  <text x="1870" y="340" text-anchor="middle" class="cell"><tspan x="1870">VOSviewer (análisis</tspan><tspan x="1870" dy="29">bibliométrico y</tspan><tspan x="1870" dy="29">co-ocurrencia).</tspan></text>
 
-  <rect x="80" y="730" width="420" height="260" class="shade"/>
-  <rect x="500" y="730" width="560" height="260" class="shade"/>
-  <rect x="1060" y="730" width="400" height="260" class="shade"/>
-  <rect x="1460" y="730" width="260" height="260" class="shade"/>
-  <text x="290" y="775" text-anchor="middle" class="label"><tspan x="290">Prospección y</tspan><tspan x="290" dy="30">Modelo de</tspan><tspan x="290" dy="30">Arquitectura</tspan><tspan x="290" dy="30">TLAZOL</tspan></text>
-  <text x="780" y="775" text-anchor="middle" class="cell"><tspan x="780">Series temporales,</tspan><tspan x="780" dy="28">modelos IPCC,</tspan><tspan x="780" dy="28">principios NAU y ODS.</tspan></text>
-  <text x="1260" y="775" text-anchor="middle" class="cell"><tspan x="1260">Regresión estadística,</tspan><tspan x="1260" dy="28">proyección demográfica</tspan><tspan x="1260" dy="28">y de CH4 (mitigación del</tspan><tspan x="1260" dy="28">20%: 269.56 a 215.65</tspan><tspan x="1260" dy="28">Gg CO2e).</tspan></text>
-  <text x="1590" y="775" text-anchor="middle" class="cell"><tspan x="1590">Modelo de arquitectura</tspan><tspan x="1590" dy="28">conceptual TLAZOL</tspan><tspan x="1590" dy="28">y matriz de</tspan><tspan x="1590" dy="28">recomendaciones</tspan><tspan x="1590" dy="28">(Recorridos,</tspan><tspan x="1590" dy="28">Separación, Reúso,</tspan><tspan x="1590" dy="28">Depósitos).</tspan></text>
+  <rect x="60" y="540" width="150" height="320" class="outer"/>
+  <rect x="210" y="540" width="360" height="320" class="outer"/>
+  <rect x="570" y="540" width="460" height="320" class="outer"/>
+  <rect x="1030" y="540" width="570" height="320" class="outer"/>
+  <rect x="1600" y="540" width="540" height="320" class="outer"/>
 
-  <line x1="80" y1="1015" x2="1720" y2="1015" class="rule"/>
-  <text x="90" y="1050" class="note">Fuente: elaboración propia, basada en la estructura metodológica de la tesis.</text>
+  <text x="135" y="700" text-anchor="middle" class="phase"><tspan x="135">Fase</tspan><tspan x="135" dy="32">II</tspan></text>
+  <text x="390" y="650" text-anchor="middle" class="label"><tspan x="390">Diagnóstico Local</tspan><tspan x="390" dy="29">y Modelo Conceptual</tspan><tspan x="390" dy="29">GEOIA</tspan></text>
+  <text x="800" y="625" text-anchor="middle" class="cell"><tspan x="800">INEGI, IGECEM,</tspan><tspan x="800" dy="29">SEMARNAT, imágenes</tspan><tspan x="800" dy="29">satelitales,</tspan><tspan x="800" dy="29">cartografía.</tspan></text>
+  <text x="1315" y="610" text-anchor="middle" class="cell"><tspan x="1315">Enfoque mixto,</tspan><tspan x="1315" dy="28">diagnóstico secundario,</tspan><tspan x="1315" dy="28">fundamentación de Machine</tspan><tspan x="1315" dy="28">Learning (Random Forest</tspan><tspan x="1315" dy="28">y VRP).</tspan></text>
+  <text x="1870" y="655" text-anchor="middle" class="cell"><tspan x="1870">QGIS + marco conceptual</tspan><tspan x="1870" dy="29">de integración de datos</tspan><tspan x="1870" dy="29">espaciales.</tspan></text>
+
+  <rect x="60" y="860" width="150" height="320" class="shade"/>
+  <rect x="210" y="860" width="360" height="320" class="shade"/>
+  <rect x="570" y="860" width="460" height="320" class="shade"/>
+  <rect x="1030" y="860" width="570" height="320" class="shade"/>
+  <rect x="1600" y="860" width="540" height="320" class="shade"/>
+
+  <text x="135" y="1020" text-anchor="middle" class="phase"><tspan x="135">Fase</tspan><tspan x="135" dy="32">III</tspan></text>
+  <text x="390" y="945" text-anchor="middle" class="label"><tspan x="390">Prospección y</tspan><tspan x="390" dy="29">Modelo de</tspan><tspan x="390" dy="29">Arquitectura TLAZOL</tspan></text>
+  <text x="800" y="960" text-anchor="middle" class="cell"><tspan x="800">Series temporales,</tspan><tspan x="800" dy="29">modelos IPCC,</tspan><tspan x="800" dy="29">principios NAU y ODS.</tspan></text>
+  <text x="1315" y="920" text-anchor="middle" class="cell"><tspan x="1315">Regresión estadística,</tspan><tspan x="1315" dy="28">proyección demográfica</tspan><tspan x="1315" dy="28">y de CH₄ (mitigación del</tspan><tspan x="1315" dy="28">20%: 269.56 a 215.65 Gg</tspan><tspan x="1315" dy="28">CO₂e).</tspan></text>
+  <text x="1870" y="925" text-anchor="middle" class="cell"><tspan x="1870">Modelo de Arquitectura</tspan><tspan x="1870" dy="29">Conceptual TLAZOL y</tspan><tspan x="1870" dy="29">matriz de recomendaciones</tspan><tspan x="1870" dy="29">(Recorridos, Separación,</tspan><tspan x="1870" dy="29">Reúso, Depósitos).</tspan></text>
+
+  <line x1="60" y1="1210" x2="2140" y2="1210" class="rule"/>
+  <text x="70" y="1248" class="note">Fuente: elaboración propia, basada en la estructura metodológica de la tesis.</text>
 </svg>
