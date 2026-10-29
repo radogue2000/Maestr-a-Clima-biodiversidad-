@@ -1,0 +1,152 @@
+# ============================================================
+# ANEXO A y B: Control de Calidad, Homogeneización y Gráficas
+# Estación 15367 - Observatorio UAEMex Toluca Centro
+# ============================================================
+
+# 1. Cargar librerías necesarias
+# install.packages(c("ggplot2", "dplyr", "tidyr", "lubridate"))
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(lubridate)
+
+# 2. Leer y formatear los datos originales
+# El archivo original tiene columnas: FECHA, PREC, EVAP, TMAX, TMIN
+datos_raw <- read.table("15367.txt", header = TRUE, skip = 20, 
+                        na.strings = c("NULO", "Nulo", "nulo", "-99.9"))
+
+# Convertir FECHA a formato Date
+datos_raw$FECHA <- as.Date(datos_raw$FECHA)
+
+# Crear columnas de año, mes, día
+datos_raw$YEAR <- year(datos_raw$FECHA)
+datos_raw$MONTH <- month(datos_raw$FECHA)
+datos_raw$DAY <- day(datos_raw$FECHA)
+
+# ============================================================
+# 3. Control de Calidad (QC) - Equivalente a RClimDex
+# ============================================================
+datos_qc <- datos_raw
+
+# 3.1. Identificar y corregir errores lógicos (TMAX < TMIN)
+errores_logicos <- which(datos_qc$TMAX < datos_qc$TMIN)
+cat("Número de errores lógicos (TMAX < TMIN):", length(errores_logicos), "\n")
+datos_qc$TMAX[errores_logicos] <- NA
+datos_qc$TMIN[errores_logicos] <- NA
+
+# 3.2. Identificar valores fuera de rango (ej. TMAX > 50, TMIN < -20, PREC > 200)
+datos_qc$TMAX[datos_qc$TMAX > 50] <- NA
+datos_qc$TMIN[datos_qc$TMIN < -20] <- NA
+datos_qc$PREC[datos_qc$PREC > 200] <- NA
+
+# 3.3. Calcular porcentaje de datos faltantes
+total_dias <- nrow(datos_qc)
+faltantes_TMAX <- sum(is.na(datos_qc$TMAX))
+faltantes_TMIN <- sum(is.na(datos_qc$TMIN))
+faltantes_PREC <- sum(is.na(datos_qc$PREC))
+
+cat("Porcentaje de datos faltantes TMAX:", round(faltantes_TMAX/total_dias*100, 2), "%\n")
+cat("Porcentaje de datos faltantes TMIN:", round(faltantes_TMIN/total_dias*100, 2), "%\n")
+cat("Porcentaje de datos faltantes PREC:", round(faltantes_PREC/total_dias*100, 2), "%\n")
+
+# 3.4. Guardar archivo después del QC (Anexo A)
+# Formato requerido por RClimDex: YEAR, MONTH, DAY, PREC, TMAX, TMIN
+datos_para_rclimdex <- datos_qc %>%
+  select(YEAR, MONTH, DAY, PREC, TMAX, TMIN) %>%
+  mutate(across(c(PREC, TMAX, TMIN), ~ifelse(is.na(.), -99.9, .)))
+
+write.table(datos_para_rclimdex, "15367_QC.txt", row.names = FALSE, col.names = FALSE, sep = " ")
+
+# ============================================================
+# 4. Gráficas de Series de Tiempo (Anexo B)
+# ============================================================
+
+# 4.1. Serie de Temperatura Máxima
+p1 <- ggplot(datos_qc, aes(x = FECHA, y = TMAX)) +
+  geom_line(color = "red", alpha = 0.5) +
+  geom_smooth(method = "loess", span = 0.1, color = "darkred", se = TRUE) +
+  labs(title = "Serie de Temperatura Máxima - Estación 15367",
+       x = "Fecha", y = "TMAX (°C)") +
+  theme_minimal()
+ggsave("AnexoB_Serie_TMAX.png", p1, width = 12, height = 6)
+
+# 4.2. Serie de Temperatura Mínima
+p2 <- ggplot(datos_qc, aes(x = FECHA, y = TMIN)) +
+  geom_line(color = "blue", alpha = 0.5) +
+  geom_smooth(method = "loess", span = 0.1, color = "darkblue", se = TRUE) +
+  labs(title = "Serie de Temperatura Mínima - Estación 15367",
+       x = "Fecha", y = "TMIN (°C)") +
+  theme_minimal()
+ggsave("AnexoB_Serie_TMIN.png", p2, width = 12, height = 6)
+
+# 4.3. Serie de Precipitación (acumulada anual)
+prec_anual <- datos_qc %>%
+  group_by(YEAR) %>%
+  summarise(PREC_ANUAL = sum(PREC, na.rm = TRUE))
+
+p3 <- ggplot(prec_anual, aes(x = YEAR, y = PREC_ANUAL)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_smooth(method = "lm", color = "red", se = TRUE) +
+  labs(title = "Precipitación Total Anual - Estación 15367",
+       x = "Año", y = "Precipitación (mm)") +
+  theme_minimal()
+ggsave("AnexoB_Serie_PREC_Anual.png", p3, width = 12, height = 6)
+
+# ============================================================
+# 5. Pruebas de Homogeneidad con RHtestsV4
+# ============================================================
+# NOTA: Este paso requiere el script RHtestsV4 descargado.
+# Los pasos son:
+# 1. Preparar archivo mensual (ej. TMAX mensual)
+# 2. Ejecutar RHtestsV4 desde la consola de R
+# 3. Revisar los resultados y guardar el log
+
+# Ejemplo de preparación de datos mensuales para RHtests
+tmax_mensual <- datos_qc %>%
+  group_by(YEAR, MONTH) %>%
+  summarise(TMAX_MENSUAL = mean(TMAX, na.rm = TRUE), .groups = "drop") %>%
+  filter(!is.na(TMAX_MENSUAL)) %>%
+  mutate(DAY = 0) %>%
+  select(YEAR, MONTH, DAY, TMAX_MENSUAL)
+
+write.table(tmax_mensual, "15367_tmax_mensual.dat", row.names = FALSE, col.names = FALSE, sep = " ")
+
+# ============================================================
+# 6. Cálculo de Índices (Anexo C) - Simulación con R base
+# ============================================================
+# Para una ejecución oficial, usar la GUI de RClimDex.
+# Aquí se muestra un cálculo simplificado de algunos índices.
+
+# 6.1. Días cálidos (TX90p): porcentaje de días con TMAX > percentil 90
+# Usando el período base 1961-1990
+base_period <- datos_qc %>% filter(YEAR >= 1961 & YEAR <= 1990)
+p90_tmax <- quantile(base_period$TMAX, 0.90, na.rm = TRUE)
+
+datos_qc$TX90p_flag <- ifelse(datos_qc$TMAX > p90_tmax, 1, 0)
+tx90p_anual <- datos_qc %>%
+  group_by(YEAR) %>%
+  summarise(TX90p = mean(TX90p_flag, na.rm = TRUE) * 100)
+
+# 6.2. Noches frías (TN10p)
+p10_tmin <- quantile(base_period$TMIN, 0.10, na.rm = TRUE)
+datos_qc$TN10p_flag <- ifelse(datos_qc$TMIN < p10_tmin, 1, 0)
+tn10p_anual <- datos_qc %>%
+  group_by(YEAR) %>%
+  summarise(TN10p = mean(TN10p_flag, na.rm = TRUE) * 100)
+
+# 6.3. Precipitación total anual (PRCPTOT) - ya calculado
+# 6.4. Máxima precipitación en 1 día (RX1day)
+rx1day_anual <- datos_qc %>%
+  group_by(YEAR) %>%
+  summarise(RX1day = max(PREC, na.rm = TRUE))
+
+# 6.5. Unir todos los índices en un solo data frame
+indices_anuales <- tx90p_anual %>%
+  left_join(tn10p_anual, by = "YEAR") %>%
+  left_join(prec_anual, by = "YEAR") %>%
+  left_join(rx1day_anual, by = "YEAR")
+
+# Guardar tabla de índices (Anexo C)
+write.csv(indices_anuales, "15367_indices.csv", row.names = FALSE)
+
+cat("Archivos generados: 15367_QC.txt, AnexoB_*.png, 15367_indices.csv\n")
